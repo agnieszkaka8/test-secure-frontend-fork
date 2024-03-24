@@ -32,7 +32,7 @@ docker build --tag=frontend:latest .
 docker run -p8081:8081 frontend:latest
 ```
 
-## Cypress config
+## Cypress configg
 
 ```
 /Users/ocado/Library/Caches/Cypress/9.2.0/Cypress.app/Contents/Resources/app/packages/server/config
