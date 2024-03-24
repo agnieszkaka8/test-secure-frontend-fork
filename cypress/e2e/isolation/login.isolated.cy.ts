@@ -23,12 +23,11 @@ describe('Login page tests', () => {
     });
 
     cy.get('[name=username]').should('be.visible');
-    cy.percySnapshot();
+    cy.percySnapshot('Login page', { widths: [1280] });
+
     // when
     cy.get('[name=username]').type(user.username);
-
     cy.get('[name=password]').type(user.password);
-
     cy.get('.btn-primary').click();
 
     // then
