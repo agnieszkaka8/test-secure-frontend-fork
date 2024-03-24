@@ -4,8 +4,8 @@ Create a file cypress.env.json with your credentials
 
 ```json
 {
-    "login": "FILL_WITH_YOUR_CREDENTIALS",
-    "password": "FILL_WITH_YOUR_CREDENTIALS"
+  "login": "FILL_WITH_YOUR_CREDENTIALS",
+  "password": "FILL_WITH_YOUR_CREDENTIALS"
 }
 ```
 
@@ -33,6 +33,7 @@ docker run -p8081:8081 frontend:latest
 ```
 
 ## Cypress config
+
 ```
 /Users/ocado/Library/Caches/Cypress/9.2.0/Cypress.app/Contents/Resources/app/packages/server/config
 ```
