@@ -22,9 +22,14 @@ describe('Login page tests', () => {
       fixture: 'users.json',
     });
 
-    // when
     cy.get('[name=username]').should('be.visible');
     cy.percySnapshot();
+    // when
+    cy.get('[name=username]').type(user.username);
+
+    cy.get('[name=password]').type(user.password);
+
+    cy.get('.btn-primary').click();
 
     // then
     cy.get('h1').should('contain.text', user.firstName);
